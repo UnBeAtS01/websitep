@@ -248,7 +248,9 @@ const ApplicationDetailsHomeScreen: FC<IProps> = ({
   // useIsomorphicLayoutEffect(() => {}, [width, height]);
 
   return (
+    // @ts-ignore
     <ApplicationDetailsContainer className="applicationDetailsHomeScreen">
+       {/* @ts-ignore */}
       <ApplicationImageAndLinksContainer className="appDetailSection">
         <ApplicationImageContainer>
           {/* <ParticleCanvas
@@ -293,6 +295,7 @@ const ApplicationDetailsHomeScreen: FC<IProps> = ({
           </Link> */}
         </ApplicationLinksContainer>
       </ApplicationImageAndLinksContainer>
+       {/* @ts-ignore */}
       <ApplicationTechStackContainer className="appDetailSection">
         {/* {application.stacks.map((stack) => (
           <div key={stack.id} className="tech-icon">
@@ -306,6 +309,7 @@ const ApplicationDetailsHomeScreen: FC<IProps> = ({
           </div>
         ))} */}
       </ApplicationTechStackContainer>
+       {/* @ts-ignore */}
       <ApplicationDescriptionContainer
         ref={appDescRef}
         className="appDetailSection"

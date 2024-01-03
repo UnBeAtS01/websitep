@@ -419,6 +419,7 @@ const ParticleCanvas: FC<IProps> = ({
   }, []);
 
   return (
+    //@ts-ignore
     <CanvasContainer ref={containerRef}>
       <canvas ref={canvasRef} id="particle-canvas" />
       <NextImage

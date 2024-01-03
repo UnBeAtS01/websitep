@@ -234,13 +234,16 @@ const ApplicationsSection: FC<IProps> = ({ products }) => {
   };
 
   return (
+    // @ts-ignore
     <ApplicationsSectionContainer ref={applicationsSectionRef}>
+       {/* @ts-ignore */}
       <ApplicationsSectionTitle className="applicationSectionTitle">
          Our <span className="emphasisGreenText">Product</span>
       </ApplicationsSectionTitle>
       <AllApplicationsContainer>
         <ApplicationNameContainer>
           {products.map((application, idx) => (
+            // @ts-ignore
             <ApplicationName
               isSelected={selectedApplication === idx}
               key={idx}

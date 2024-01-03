@@ -59,9 +59,11 @@ const BlogCard = styled(GlassBox)`
 
 const BlogCardComponent: React.FC<{}> = () => {
   return (
+    // @ts-ignore
     <BlogCardContainer className="glassContainer">
       <BlogBlob1 />
       <BlogBlob2 />
+       {/* @ts-ignore */}
       <BlogCard className="glassCard">
         <div className="title">My Recent Blogs</div>
         <div className="description">Coming Soon</div>

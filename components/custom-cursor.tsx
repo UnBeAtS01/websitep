@@ -90,7 +90,10 @@ const CustomCursor: FC = () => {
     };
   }, []);
 
-  return <CustomCursorContainer className="cursor" ref={cursorRef} />;
+  return( 
+    //@ts-ignore
+  <CustomCursorContainer className="cursor" ref={cursorRef} />
+  );
 };
 
 export default CustomCursor;

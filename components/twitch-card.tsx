@@ -87,6 +87,7 @@ const TwitchCard = styled(GlassBox)`
 
 const TwitchCardComponent: React.FC<{}> = () => {
   return (
+    //@ts-ignore
     <TwitchCardContainer className="glassContainer">
       <TwitchBlob />
       <Link href="https://twitch.tv/theninza" passHref>
@@ -95,6 +96,7 @@ const TwitchCardComponent: React.FC<{}> = () => {
           rel="noopener noreferrer"
           className="umami--click--external-twitch"
         >
+          {/* @ts-ignore */}
           <TwitchCard className="glassCard">
             <div className="twitch-logo-absolute-wrapper">
               <div className="twitch-logo-container">

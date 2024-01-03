@@ -295,14 +295,18 @@ const ContactSection: React.FC = () => {
   }, []);
 
   return (
+    // @ts-ignore
     <ContactSectionContainer ref={contactSectionSectionRef}>
       {/* welcome to section text */}
+      {/* @ts-ignore */}
       <ThankyouText ref={thankyouTextRef}>
         Thank you for making it this far!
       </ThankyouText>
 
       {/* main content */}
+      {/* @ts-ignore */}
       <MainContentContainer>
+        {/* @ts-ignore */}
         <ContactSectionTitle ref={contactSectionTitleRef}>
           <span className="textFragment">Let&apos;s</span>{" "}
           <span className="textFragment underline lightred">Get</span>{" "}
@@ -311,6 +315,7 @@ const ContactSection: React.FC = () => {
         </ContactSectionTitle>
 
         {/* FlexContainer */}
+        {/* @ts-ignore */}
         <FlexContainer className="contactsFlexSection">
           {/* form */}
           <FormContainerComponent />

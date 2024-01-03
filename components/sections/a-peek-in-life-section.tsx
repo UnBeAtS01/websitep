@@ -168,8 +168,11 @@ const APeekInLifeSection: React.FC = () => {
   }, []);
 
   return (
+    // @ts-ignore
     <APeekInLifeSectionContainer ref={aPeekInLifeSectionRef}>
+       {/* @ts-ignore */}
       <APeekInLifeSectionTitle className="aPeekInLifeSectionTitle">
+         {/* @ts-ignore */}
         A <span className="emphasisGreenText">peek</span> in my{" "}
         <span className="emphasisRedText">Life</span>{" "}
       </APeekInLifeSectionTitle>

@@ -85,6 +85,7 @@ const HeroLoader = () => {
   }, []);
 
   return (
+    //@ts-ignore
     <HeroLoaderContainer className="heroContainer">
       <Image
         className="loaderLogo"

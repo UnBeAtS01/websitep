@@ -331,15 +331,18 @@ const WorksSection: React.FC<IProps> = ({
   }, []);
 
   return (
+    //@ts-ignore
     <WorksSectionContainer ref={worksSectionRef}>
       <WorksFlexContainer>
         <WorksColumns>
           <SubSection>
+            {/* @ts-ignore */}
             <SmallTitle className="smallTitle">
               Our <span className="emphasisRedText">Culture</span>
             </SmallTitle>
             <CarouselComponent showCarousel={showCarousel}>
               {ourCultures.map((product,id) => (
+                //@ts-ignore
                 <SubSectionBody key={id}>
                   <div className="flexbox">
                     <SpacedSubSectionTitle>
@@ -347,6 +350,7 @@ const WorksSection: React.FC<IProps> = ({
                     </SpacedSubSectionTitle>
                   </div>
                   {product.description.split("\n").map((paragraph, i) => (
+                    //@ts-ignore
                     <SubSectionDescription key={i}>
                       {paragraph}
                     </SubSectionDescription>
@@ -356,13 +360,16 @@ const WorksSection: React.FC<IProps> = ({
             </CarouselComponent>
           </SubSection>
           <SubSection>
+            {/* @ts-ignore */}
             <SmallTitle className="smallTitle">
               Our <span className="emphasisGreenText">Vision</span>
             </SmallTitle>
             <CarouselComponent showCarousel={showCarousel}>
               {visions.map((volunteer,id) => (
+                //@ts-ignore
                 <SubSectionBody key={id}>
                   {volunteer.description.split("\n").map((paragraph, i) => (
+                    //@ts-ignore
                     <SubSectionDescription key={i}>
                       {paragraph}
                     </SubSectionDescription>

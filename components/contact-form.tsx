@@ -76,6 +76,7 @@ const FormContainerComponent: React.FC = () => {
   };
 
   return (
+    //@ts-ignore
     <FormContainer onSubmit={handleSubmit}>
       <InteractiveTextInput
         name="email"

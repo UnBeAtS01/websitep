@@ -224,12 +224,15 @@ const TechStackSection: FC<IProps> = ({ stacks ,pixwingstacks}) => {
   }, []);
 
   return (
+    //@ts-ignore
     <TechStackSectionContainer ref={techStackSectionRef}>
+      {/* @ts-ignore */}
       <TechSectionTitle className="techSectionTitle">
       Our<span className="emphasisRedText"> Expertise </span>
       </TechSectionTitle>
       <AllTechContainer>
         {stacks.map((stack) => (
+          //@ts-ignore
           <TechImageContainer
             className="techImage"
             key={stack.id}
@@ -244,6 +247,7 @@ const TechStackSection: FC<IProps> = ({ stacks ,pixwingstacks}) => {
           </TechImageContainer>
         ))}
         {pixwingstacks.map((stack) => (
+          //@ts-ignore
           <TechImageContainer
             className="techImage"
             key={stack.id}

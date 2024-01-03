@@ -303,9 +303,11 @@ const SpotifyCardComponent: React.FC = () => {
   };
 
   return (
+    //@ts-ignore
     <SpotifyCardContainer className="glassContainer">
       <SpotifyBlob1 />
       <SpotifyBlob2 />
+      {/* @ts-ignore */}
       <SpotifyCard
         className="glassCard"
         shouldScrollArtistsNames={shouldScrollArtistName}

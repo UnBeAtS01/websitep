@@ -255,6 +255,7 @@ const HeroSection: FC = () => {
     <HeroSectionContainer>
       <img className="logo"  src="/logo_pixwingai.svg" alt="logo" />
       <HeadingAnimatedWrapper>
+         {/* @ts-ignore */}
         <BigHeading
           onMouseEnter={handleHover}
           onMouseLeave={handleHoverOut}
@@ -273,6 +274,7 @@ const HeroSection: FC = () => {
         <div className="lightRedBanner banner"></div>
       </HeadingAnimatedWrapper>
       <HeadingAnimatedWrapper>
+         {/* @ts-ignore */}
         <BigHeading
           onMouseEnter={handleHover}
           onMouseLeave={handleHoverOut}
@@ -320,6 +322,7 @@ const HeroSection: FC = () => {
         <div className="greenBanner banner"></div>
       </HeadingAnimatedWrapper>
       <HeadingAnimatedWrapper>
+         {/* @ts-ignore */}
         <OutlinedBigHeading
           onMouseEnter={handleHover}
           onMouseLeave={handleHoverOut}
@@ -329,6 +332,7 @@ const HeroSection: FC = () => {
         </OutlinedBigHeading>
         <div className="blueBanner banner"></div>
       </HeadingAnimatedWrapper>
+       {/* @ts-ignore */}
       <HiddenCatContainer ref={heroImageContainerRef}>
         <Image
           src="/cat-hero-section.webp"

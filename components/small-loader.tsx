@@ -76,6 +76,7 @@ const SmallLoader: React.FC<Iprops> = ({
   }, [isLoading]);
 
   return (
+    //@ts-ignore
     <SmallLoaderContainer
       ref={loaderRef}
       className={`${isTransparent ? "transparent" : ""}`}

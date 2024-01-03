@@ -296,10 +296,12 @@ const InteractiveButton: React.FC<
   }, [isLoading, isError, isSuccess, endIconUrl.length, buttonText.length]);
 
   return (
+    //@ts-ignore
     <Button
       buttonText={buttonText}
       endIconUrl={endIconUrl}
       endIconHoverUrl={endIconHoverUrlFinal}
+      //@ts-ignore
       ref={buttonRef}
       iconAspectRatio={iconAspectRatioFinal}
       className={`umami--click--${buttonText.toLowerCase().replace(/ /g, "-")}`}

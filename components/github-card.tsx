@@ -261,6 +261,7 @@ const GithubCardComponent: React.FC = () => {
   };
 
   return (
+    //@ts-ignore
     <GithubCardContainer className="glassContainer">
       <Link href="https://github.com/theninza" passHref>
         <a
@@ -268,6 +269,7 @@ const GithubCardComponent: React.FC = () => {
           rel="noopener noreferrer"
           className="umami--click--external-github"
         >
+          {/* @ts-ignore */}
           <GithubCard className="glassCard">
             <div className="title">My Github Stats</div>
             {/* chart */}

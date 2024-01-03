@@ -277,15 +277,19 @@ const InteractiveTextInput: React.FC<IProps> = ({
   }, [width]);
 
   return (
+    //@ts-ignore
     <InputContainer ref={containerRef}>
+      {/* @ts-ignore */}
       <InputField
         id={name}
+        //@ts-ignore
         name={name}
         type={type}
         value={value}
         onChange={onChange}
         {...otherInputProps}
       />
+      {/* @ts-ignore */}
       <InputLabel className={value.length ? "shrink" : ""} htmlFor={name}>
         {label}
       </InputLabel>

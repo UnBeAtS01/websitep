@@ -217,12 +217,14 @@ const SocialsContainerComponent: React.FC = () => {
         <SocialIconLinkContainer>
           {socials.map(({ SvgEl, name, url }) => (
             <Link href={url} passHref key={name}>
+              {/* @ts-ignore */}
               <SocialIconLink
                 className={`contactSectionSocialLink umami--click--external-${name.toLowerCase()}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <SvgEl />
+                {/* @ts-ignore */}
                 <SocialIconSvgName className="svgIconName">
                   {width && width > 400 && name}
                 </SocialIconSvgName>
@@ -260,6 +262,7 @@ export default SocialsContainerComponent;
 const socials = [
   {
     SvgEl: () => (
+      //@ts-ignore
       <SocialIconSvg
         width="56"
         height="54"
@@ -280,6 +283,7 @@ const socials = [
   },
   {
     SvgEl: () => (
+      //@ts-ignore
       <SocialIconSvg
         width="55"
         height="54"
@@ -300,6 +304,7 @@ const socials = [
   },
   {
     SvgEl: () => (
+      //@ts-ignore
       <SocialIconSvg
         width="72"
         height="54"
@@ -318,6 +323,7 @@ const socials = [
   },
   {
     SvgEl: () => (
+      //@ts-ignore
       <SocialIconSvg
         width="55"
         height="54"

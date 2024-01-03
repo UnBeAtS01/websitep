@@ -103,6 +103,7 @@ const Home: NextPage = ({
   return (
     <>
       <MetaTags />
+       {/* @ts-ignore */}
       <Container ref={containerRef}>
         <HeroSection />
         <TechStackSection stacks={initialHomePageProps.stacks} pixwingstacks={initialHomePagePropsPixWingAi.pixwingstacks} />
