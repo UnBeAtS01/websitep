@@ -62,6 +62,7 @@ const CarouselComponent: React.FC<IProps> = ({ children, showCarousel }) => {
       isAdditionalInfo={isAdditionalFeaturesRequired}
       ref={carauselRef}
     >
+      {/* @ts-ignore */}
       <Carousel
         showArrows={false}
         showStatus={false}
