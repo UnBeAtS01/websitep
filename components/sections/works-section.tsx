@@ -28,7 +28,7 @@ z-index:1;
   border-radius:20px;
   overflow-y: hidden;
   color: black !important;
-  padding: 20px 20px;
+  padding:20px 20px;
   /* align items to center of the container */
   display: flex;
   flex-direction: column;
@@ -114,16 +114,16 @@ const SmallTitle = styled(SectionTitle)`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
     text-align: center;
-    font-size:1.5rem;
+    font-size:1.7rem;
   }
 `;
 
@@ -182,14 +182,14 @@ z-index:1;
 
   
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     letter-spacing: calc(0.6rem * 0.3);
   }
 `;
 
 const SubSectionDescription = styled.p`
   width: 100%;
-  font-size: 1.7rem;
+  font-size: 2.6rem;
   color: black;
   z-index:1;
   line-height: 1.5;
@@ -199,7 +199,7 @@ const SubSectionDescription = styled.p`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 `;
 const LocationLogo = styled.img`
