@@ -260,27 +260,7 @@ const SocialsContainerComponent: React.FC = () => {
 export default SocialsContainerComponent;
 
 const socials = [
-  {
-    SvgEl: () => (
-      //@ts-ignore
-      <SocialIconSvg
-        width="56"
-        height="54"
-        viewBox="0 0 56 54"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M27.6829 0C12.3881 0 0 12.3881 0 27.6829C0 39.9326 7.92424 50.2791 18.9282 53.9471C20.3124 54.1893 20.8314 53.3589 20.8314 52.6322C20.8314 51.9747 20.7968 49.7947 20.7968 47.4762C13.8415 48.7566 12.0421 45.7806 11.4884 44.2235C11.177 43.4276 9.82744 40.9707 8.65092 40.3133C7.68202 39.7942 6.29787 38.5139 8.61631 38.4793C10.7963 38.4447 12.3535 40.4863 12.8726 41.3168C15.364 45.5038 19.3435 44.3273 20.9352 43.6006C21.1774 41.8012 21.9041 40.5901 22.7 39.898C16.5406 39.206 10.1043 36.8183 10.1043 26.2296C10.1043 23.2191 11.177 20.7276 12.9418 18.7898C12.6649 18.0977 11.696 15.2602 13.2186 11.4538C13.2186 11.4538 15.537 10.7271 20.8314 14.2913C23.046 13.6684 25.3991 13.357 27.7521 13.357C30.1052 13.357 32.4582 13.6684 34.6729 14.2913C39.9672 10.6925 42.2857 11.4538 42.2857 11.4538C43.8083 15.2602 42.8393 18.0977 42.5625 18.7898C44.3273 20.7276 45.4 23.1845 45.4 26.2296C45.4 36.8529 38.9291 39.206 32.7697 39.898C33.7732 40.7631 34.6383 42.4241 34.6383 45.0194C34.6383 48.722 34.6037 51.6979 34.6037 52.6322C34.6037 53.3589 35.1227 54.2239 36.5069 53.9471C42.0023 52.0917 46.7777 48.5597 50.1607 43.8483C53.5438 39.1369 55.3642 33.4832 55.3659 27.6829C55.3659 12.3881 42.9778 0 27.6829 0Z"
-          fill="#B4B4B4"
-        />
-      </SocialIconSvg>
-    ),
-    name: "Github",
-    url: "https://github.com/theninza",
-  },
+ 
   {
     SvgEl: () => (
       //@ts-ignore
@@ -300,7 +280,7 @@ const socials = [
       </SocialIconSvg>
     ),
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/theninza/",
+    url: "https://www.linkedin.com/company/pixwingai/",
   },
   {
     SvgEl: () => (
@@ -319,7 +299,7 @@ const socials = [
       </SocialIconSvg>
     ),
     name: "Gmail",
-    url: "mailto:niks.a3198@gmail.com",
+    url: "mailto:pixwingai@gmail.com",
   },
   {
     SvgEl: () => (
@@ -338,6 +318,6 @@ const socials = [
       </SocialIconSvg>
     ),
     name: "Instagram",
-    url: "https://www.instagram.com/nik_gupta._/",
+    url: "https://www.instagram.com/pixwingai/",
   },
 ];
