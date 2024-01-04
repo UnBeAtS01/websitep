@@ -114,10 +114,10 @@ const SmallTitle = styled(SectionTitle)`
   margin-left: unset;
   margin-right: unset;
   text-align: unset;
-  opacity: 0;
+  opacity: 1;
   white-space: nowrap;
   & .smallTitleLetter {
-    opacity: 0;
+    opacity: 1;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
@@ -250,7 +250,7 @@ const WorksSection: React.FC<IProps> = ({
   ourCultures,
   visions,
 }) => {
-  const [showCarousel, setShowCarousel] = useState<boolean>(false);
+  const [showCarousel, setShowCarousel] = useState<boolean>(true);
 
   const worksSectionRef = useCallback((el: HTMLDivElement) => {
     if (!el) return;
@@ -306,7 +306,7 @@ const WorksSection: React.FC<IProps> = ({
 
           smallTitleLetters.forEach((letter) => {
             const el = letter as HTMLElement;
-            el.style.opacity = "0";
+            el.style.opacity = "1";
           });
 
           smallTitles.forEach((t) => {
@@ -345,7 +345,7 @@ const WorksSection: React.FC<IProps> = ({
               .fromTo(
                 letter,
                 {
-                  opacity: 0,
+                  opacity: 1,
                   rotate: Math.random() * 720,
                 },
                 {

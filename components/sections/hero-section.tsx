@@ -331,29 +331,8 @@ const HeroSection: FC = () => {
         </BigHeading>
         <div className="greenBanner banner"></div>
       </HeadingAnimatedWrapper>
-      <HeadingAnimatedWrapper>
-         {/* @ts-ignore */}
-        <OutlinedBigHeading
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHoverOut}
-          className="heroHeading outlined"
-        >
-          &ldquo;That&apos;s it??&rdquo;
-        </OutlinedBigHeading>
-        <div className="blueBanner banner"></div>
-      </HeadingAnimatedWrapper>
-       {/* @ts-ignore */}
-      <HiddenCatContainer ref={heroImageContainerRef}>
-        <Image
-          src="/cat-hero-section.webp"
-          alt="Cat"
-          className="cat"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHoverOut}
-          width={500}
-          height={375}
-        />
-      </HiddenCatContainer>
+      
+     
     </HeroSectionContainer>
   );
 };
