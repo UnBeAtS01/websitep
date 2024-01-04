@@ -21,6 +21,7 @@ interface IProps {
 }
 
 const WorksSectionContainer = styled.div`
+z-index:1;
   min-height: 100vh;
   width: 100%;
  background-color:#FFFAFA!important;
@@ -173,7 +174,7 @@ const SpacedSubSectionTitle = styled(SectionTitle)`
   margin-right: unset;
   text-align: unset;
   opacity: inherit;
-
+z-index:1;
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
     font-size: 1.8rem;
     letter-spacing: calc(2.2rem * 0.2);
@@ -190,6 +191,7 @@ const SubSectionDescription = styled.p`
   width: 100%;
   font-size: 1.7rem;
   color: black;
+  z-index:1;
   line-height: 1.5;
   transition: all 0.3s ease;
   &:hover {
@@ -202,11 +204,18 @@ const SubSectionDescription = styled.p`
 `;
 const LocationLogo = styled.img`
   width: 100%; // Adjust the width according to your needs
+  overflow: hidden;
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+ 
    width: 100%;
+   height:30vh;
+   transform: scale(2.6);
   }
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+  
    width:100%;
+   height:30vh;
+   transform: scale(2.6);
   }
 `;
 const WorksSection: React.FC<IProps> = ({
