@@ -14,7 +14,8 @@ const MetaTags: React.FC = () => (
       name="keywords"
       content="Pix PixWingAi drone videography adventure camera Wing Ai "
     />
-    <meta name="robots" content="index, follow, google-site-verification: google46d11a88308042dd.html" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="7BCCPQdHfFO2olFB1xRkkGlMx2CUrIkgGxuqVtlnXFY" />
     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
     <meta name="author" content="PixWingAi" />
