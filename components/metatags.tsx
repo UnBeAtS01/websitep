@@ -14,12 +14,11 @@ const MetaTags: React.FC = () => (
       name="keywords"
       content="Pix PixWingAi drone videography adventure camera Wing Ai "
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, google-site-verification: google46d11a88308042dd.html" />
     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
     <meta name="author" content="PixWingAi" />
     <meta httpEquiv="X-UA-Compatible" content="IE=7" />
-
     <meta
       name="description"
       content="PixWingAi's autonomous drones are equipped with advanced computer vision and tracking algorithms, ensuring precise and smooth capture of high-speed movements. Our technology allows for seamless tracking and recording of fast-paced subjects, delivering exceptional clarity and detail in every frame."

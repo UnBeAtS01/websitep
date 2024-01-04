@@ -22,13 +22,13 @@ interface IProps {
 
 const WorksSectionContainer = styled.div`
 z-index:1;
-  min-height: 100vh;
+  min-height: 60vh;
   width: 100%;
  background-color:#FFFAFA!important;
   border-radius:20px;
   overflow-y: hidden;
   color: black !important;
-  padding:20px 20px;
+  
   /* align items to center of the container */
   display: flex;
   flex-direction: column;
@@ -174,15 +174,16 @@ const SpacedSubSectionTitle = styled(SectionTitle)`
   margin-right: unset;
   text-align: unset;
   opacity: inherit;
-z-index:1;
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
     font-size: 1.8rem;
     letter-spacing: calc(2.2rem * 0.2);
   }
-
-  
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+    letter-spacing: calc(0.6rem * 0.3);
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+    font-size: 0.6rem;
     letter-spacing: calc(0.6rem * 0.3);
   }
 `;
@@ -191,7 +192,6 @@ const SubSectionDescription = styled.p`
   width: 100%;
   font-size: 2.6rem;
   color: black;
-  z-index:1;
   line-height: 1.5;
   transition: all 0.3s ease;
   &:hover {
@@ -206,13 +206,11 @@ const LocationLogo = styled.img`
   width: 100%; // Adjust the width according to your needs
   overflow: hidden;
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
- 
    width: 100%;
    height:30vh;
    transform: scale(2.6);
   }
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
-  
    width:100%;
    height:30vh;
    transform: scale(2.6);
@@ -398,14 +396,14 @@ const WorksSection: React.FC<IProps> = ({
             </CarouselComponent>
           </SubSection>
         </WorksColumns>
-        <WorksColumns>
-          <SubSection>
+        {/* <WorksColumns> */}
+          {/* <SubSection> */}
             {/* @ts-ignore */}
-            <SmallTitle className="smallTitle">
+            {/* <SmallTitle className="smallTitle">
               Our <span className="emphasisBlueText">Presence</span>
-            </SmallTitle>
+            </SmallTitle> */}
             {/* @ts-ignore */}
-            <LocationLogo className="locationLogo" src="/location_map.svg" alt="logo" />
+            {/* <LocationLogo className="locationLogo" src="/location_map.svg" alt="logo" /> */}
             {/* <CarouselComponent showCarousel={showCarousel}>
               
               {responsibilities.map((responsibility) => (
@@ -451,9 +449,9 @@ const WorksSection: React.FC<IProps> = ({
               ))}
             </CarouselComponent> */}
          
-          </SubSection>
+          {/* </SubSection> */}
           
-        </WorksColumns>
+        {/* </WorksColumns> */}
       </WorksFlexContainer>
     </WorksSectionContainer>
   );
