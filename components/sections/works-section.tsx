@@ -21,7 +21,7 @@ interface IProps {
 }
 
 const WorksSectionContainer = styled.div`
-z-index:1;
+
   min-height: 60vh;
   width: 100%;
  background-color:#FFFAFA!important;
@@ -82,9 +82,12 @@ const WorksColumns = styled.div`
   flex-direction: column;
   gap: ${({ theme }) => theme.space.xxl};
   width: calc(50% - (${({ theme }) => theme.space.xxl} / 2));
-
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
     gap: ${({ theme }) => theme.space.lg};
+    width: unset;
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
+    gap: ${({ theme }) => theme.space.xl};
     width: unset;
   }
 `;
@@ -94,8 +97,12 @@ const SubSection = styled.div`
   min-height: 40vh;
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.space.xl};
+  gap: ${({ theme }) => theme.space.md};
   padding: 5px 50px;
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
+    min-height: 10vh;
+    gap: ${({ theme }) => theme.space.xl};
+  }
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
     min-height: 10vh;
     gap: ${({ theme }) => theme.space.lg};
@@ -114,11 +121,11 @@ const SmallTitle = styled(SectionTitle)`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
-    font-size: 3.6rem;
+    font-size: 1.6rem;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
@@ -142,7 +149,10 @@ const SubSectionBody = styled.div`
     &:hover {
       transform: scale(1.1);
     }
-
+    @media only screen and (max-width: ${({ theme }) =>
+    theme.breakpoints.xl}px) {
+  font-size: 2.5rem;
+}
     @media only screen and (max-width: ${({ theme }) =>
         theme.breakpoints.lg}px) {
       font-size: 2.5rem;
@@ -178,6 +188,10 @@ const SpacedSubSectionTitle = styled(SectionTitle)`
     font-size: 1.8rem;
     letter-spacing: calc(2.2rem * 0.2);
   }
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    font-size: 1.8rem;
+    letter-spacing: calc(2.2rem * 0.2);
+  }
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
     font-size: 0.6rem;
     letter-spacing: calc(0.6rem * 0.3);
@@ -197,7 +211,12 @@ const SubSectionDescription = styled.p`
   &:hover {
     color: #41725D;
   }
-
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
+    font-size: 0.7rem;
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    font-size: 0.7rem;
+  }
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
     font-size: 0.7rem;
   }
@@ -205,6 +224,16 @@ const SubSectionDescription = styled.p`
 const LocationLogo = styled.img`
   width: 100%; // Adjust the width according to your needs
   overflow: hidden;
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
+    width: 100%;
+    height:30vh;
+    transform: scale(2.6);
+   }
+   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
+    width: 100%;
+    height:30vh;
+    transform: scale(2.6);
+   }
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
    width: 100%;
    height:30vh;
@@ -396,14 +425,14 @@ const WorksSection: React.FC<IProps> = ({
             </CarouselComponent>
           </SubSection>
         </WorksColumns>
-        {/* <WorksColumns> */}
-          {/* <SubSection> */}
+        <WorksColumns>
+          <SubSection> 
             {/* @ts-ignore */}
-            {/* <SmallTitle className="smallTitle">
+            <SmallTitle className="smallTitle">
               Our <span className="emphasisBlueText">Presence</span>
-            </SmallTitle> */}
+            </SmallTitle> 
             {/* @ts-ignore */}
-            {/* <LocationLogo className="locationLogo" src="/location_map.svg" alt="logo" /> */}
+             <LocationLogo className="locationLogo" src="/location_map.svg" alt="logo" /> 
             {/* <CarouselComponent showCarousel={showCarousel}>
               
               {responsibilities.map((responsibility) => (
@@ -449,9 +478,9 @@ const WorksSection: React.FC<IProps> = ({
               ))}
             </CarouselComponent> */}
          
-          {/* </SubSection> */}
+         </SubSection> 
           
-        {/* </WorksColumns> */}
+         </WorksColumns> 
       </WorksFlexContainer>
     </WorksSectionContainer>
   );
