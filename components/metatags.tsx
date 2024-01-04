@@ -22,7 +22,7 @@ const MetaTags: React.FC = () => (
 
     <meta
       name="description"
-      content=""
+      content="PixWingAi's autonomous drones are equipped with advanced computer vision and tracking algorithms, ensuring precise and smooth capture of high-speed movements. Our technology allows for seamless tracking and recording of fast-paced subjects, delivering exceptional clarity and detail in every frame."
     />
 
     {/* <!-- Open Graph / Facebook --> */}
