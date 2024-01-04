@@ -68,24 +68,34 @@ const BigHeading = styled.h1`
     &:hover {
       transform: scale(1.1) translateY(-10px) rotate(5deg);
     }
+    @media only screen and (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+    
+     font-size:5vw;
+    }
+    @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+   
+      & .letterHeading {
+        font-size:6vw;
+       }
+    }
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.xl}px) {
-    font-size: 6.9vw;
+    
     & .letterHeading {
      font-size:8vw;
     }
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
-    font-size: 10vw;
+   
     & .letterHeading {
       font-size:13vw;
      }
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
-    font-size: 12vw;
+ 
     & .letterHeading {
       font-size:16vw;
      }

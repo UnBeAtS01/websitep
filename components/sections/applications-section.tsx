@@ -144,7 +144,7 @@ const ApplicationName = styled.h3<IApplicationName>`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
-    font-size: ${({ isSelected }) => (isSelected ? "2rem" : "1.5rem")};
+    font-size: ${({ isSelected }) => (isSelected ? "1.1rem" : "1rem")};
   }
 `;
 

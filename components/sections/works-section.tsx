@@ -120,8 +120,9 @@ const SmallTitle = styled(SectionTitle)`
     font-size: 2.5rem;
   }
 
-  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
     text-align: center;
+    font-size:1.5rem;
   }
 `;
 
@@ -178,9 +179,10 @@ const SpacedSubSectionTitle = styled(SectionTitle)`
     letter-spacing: calc(2.2rem * 0.2);
   }
 
-  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    font-size: 1.5rem;
-    letter-spacing: calc(1.5rem * 0.3);
+  
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+    font-size: 0.6rem;
+    letter-spacing: calc(0.6rem * 0.3);
   }
 `;
 
@@ -194,11 +196,19 @@ const SubSectionDescription = styled.p`
     color: #41725D;
   }
 
-  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
-    font-size: 1rem;
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+    font-size: 0.5rem;
   }
 `;
-
+const LocationLogo = styled.img`
+  width: 100%; // Adjust the width according to your needs
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+   width: 100%;
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+   width:100%;
+  }
+`;
 const WorksSection: React.FC<IProps> = ({
   corprateSocialRs,
   ourCultures,
@@ -380,11 +390,13 @@ const WorksSection: React.FC<IProps> = ({
           </SubSection>
         </WorksColumns>
         <WorksColumns>
-          {/* <SubSection>
+          <SubSection>
+            {/* @ts-ignore */}
             <SmallTitle className="smallTitle">
               Our <span className="emphasisBlueText">Presence</span>
             </SmallTitle>
-            <h1>Coming Soon!!</h1> */}
+            {/* @ts-ignore */}
+            <LocationLogo className="locationLogo" src="/location_map.svg" alt="logo" />
             {/* <CarouselComponent showCarousel={showCarousel}>
               
               {responsibilities.map((responsibility) => (
@@ -430,8 +442,8 @@ const WorksSection: React.FC<IProps> = ({
               ))}
             </CarouselComponent> */}
          
-          {/* </SubSection>
-           */}
+          </SubSection>
+          
         </WorksColumns>
       </WorksFlexContainer>
     </WorksSectionContainer>
