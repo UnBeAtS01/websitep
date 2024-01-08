@@ -296,6 +296,7 @@ const HeroSection: FC = () => {
           <span className="letterHeading2">e</span>
           <span className="letterHeading2">a</span>
           <span className="letterHeading2">s</span>
+          <span className="letterHeading2">h</span>
           <span className="letterHeading2">i</span>
           <span className="letterHeading2">n</span>
           <span className="letterHeading2">g</span>
