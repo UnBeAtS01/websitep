@@ -29,7 +29,7 @@ const Presence: React.FC = () => {
         <h1 className="text">Kolad Bungee</h1>
       </div>
 
-      <style jsx global>{`
+      <style jsx>{`
         body {
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
