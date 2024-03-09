@@ -27,6 +27,7 @@ import type {
   ICorprate
 } from "../config/types/dataTypes";
 import useIsomorphicLayoutEffect from "../hooks/use-isomorphic-layout-effect";
+import Presence from "../components/sections/Presence";
 
 // types
 type IInitialHomePageProps = {
@@ -113,6 +114,7 @@ const Home: NextPage = ({
           corprateSocialRs={initialHomePagePropsPixWingAi.corprateSocialRs}
           visions={initialHomePagePropsPixWingAi.visions}
         />
+        <Presence/>
         {/* <APeekInLifeSection /> */}
         <ContactSection />
       </Container>
