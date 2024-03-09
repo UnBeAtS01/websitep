@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 const FooterComponent = styled.footer`
   position: absolute;
-  bottom: 6px;
+  bottom: -10px;
   left: 50%;
+  z-index:9000;
   transform: translateX(-50%);
 
   & * {
